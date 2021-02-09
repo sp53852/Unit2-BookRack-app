@@ -1,0 +1,21 @@
+
+body {
+background-color:lightgreen;
+
+}
+
+/* .container {
+    display: flex;
+    text-align: center;
+} */
+
+h1{
+    text-align: center;
+}
+
+
+
+#pic {
+ height: 300px;
+ width: 200px;
+}
