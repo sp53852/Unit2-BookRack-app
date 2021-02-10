@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <h1>Reader Profile Page</h1>
+
+    <form action="/readers/profile/<%=reader.id%>?_method=PUT"" method="POST">
+        Name:<input type="text" name="name" value="<%=reader.name%>"> <br/>
+        Username:<input type="text" name="username" value="<%=reader.username%>"> <br/>
+        Password:<input type="text" name="password" value=" <%=reader.password%>"> <br> <br>
+        <input type="submit" value="Edit Profile">
+    </form>
+
+    <br> 
+    <form action="/readers/<%=reader.id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete Reader">
+    </form>
+
+    <h3>Books added by you:</h3>
+    <ul>
+    <% for (let i = 0; i < reader.Books.length; i++){ %>
+            <li>
+               <a href="/books/<%=reader.Books[i].id%>"><%=reader.Books[i].title%></a>
+            </li>
+            <br>
+    <% } %>
+  </ul>
+    <br /><br />
+    <a href="/books">View Book Rack</a>
+</body>
+</html>    

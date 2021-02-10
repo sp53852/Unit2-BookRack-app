@@ -14,6 +14,7 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/books", require("./controllers/booksController.js"));
+app.use("/readers", require("./controllers/readersController.js"));
 
 
 

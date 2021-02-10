@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Edit Book Information</h1>
-        <form action="/books/<%=index%>?_method=PUT" method="POST">
+        <form action="/books/<%=book.id%>?_method=PUT" method="POST">
             Title: <input type="text" name="title" value="<%=book.title%>"/><br/>
             ISBN: <input type="text" name="isbn" value="<%=book.isbn%>"/><br/>
             Publisher: <input type="text" name="publisher" value="<%=book.publisher%>"/><br/>

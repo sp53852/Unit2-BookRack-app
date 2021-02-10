@@ -14,7 +14,12 @@
      ISBN:  <%= book.isbn %> <br>
      Publisher: <%= book.publisher %> <br>
      Country: <%= book.country %> <br><br>
-     <img id="pic" src="<%= book.img %>">
+     <img id="pic" src="<%= book.img %>"> <br><br>
+     This book is added by <%=book.Reader.name%> <br><br><br>
+
+     <form action="/books/<%=book.id%>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE <%= book.title %>" />
+      </form>
     <!-- </div> -->
 </body>
 </html>
