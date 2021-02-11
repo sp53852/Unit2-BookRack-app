@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const app = express();
 
@@ -20,8 +21,10 @@ app.use("/readers", require("./controllers/readersController.js"));
 
 
 
+// app.listen(3000, () => {
+//     console.log("Server is listening!!!")
+// });
 
-
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("Server is listening!!!")
 });
