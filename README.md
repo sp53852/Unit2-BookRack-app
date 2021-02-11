@@ -6,7 +6,7 @@
 
 ## Project Links
 - GitHub Repository: https://github.com/sp53852/Unit2-BookRack-app
-- Deployment:
+- Deployment: https://bookreaderssharmila.herokuapp.com/books
 
 ## Wireframes
 - https://github.com/sp53852/Unit2-BookRack-app/blob/master/img/IMG_0597.jpg
