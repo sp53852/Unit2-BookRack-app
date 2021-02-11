@@ -5,4 +5,16 @@ body {
   }
 h1 {
     text-align: center;
+    padding-bottom: 2rem;
+}
+.container1 {
+    text-align: center;
+}
+
+.container2 {
+    text-align: left;
+}
+
+.container3{
+    text-align: right;
 }

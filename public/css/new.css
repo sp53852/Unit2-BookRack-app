@@ -1,0 +1,13 @@
+body{
+    background-color:lightsteelblue;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.new{
+    text-align: center;
+}

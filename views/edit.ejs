@@ -7,6 +7,7 @@
     </head>
     <body>
         <h1>Edit Book Information</h1>
+        <nav class="edit1">
         <form action="/books/<%=book.id%>?_method=PUT" method="POST">
             Title: <input type="text" name="title" value="<%=book.title%>"/><br/>
             ISBN: <input type="text" name="isbn" value="<%=book.isbn%>"/><br/>
@@ -15,5 +16,6 @@
             Image: <input type="text" name="image" value="<%=book.img%>"/><br/><br/>
             <input type="submit" name="" value="Submit Changes"/>
         </form>
+        </nav>
     </body>
 </html>

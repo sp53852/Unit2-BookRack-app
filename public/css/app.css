@@ -1,9 +1,15 @@
-body {
-    color:green;
-    background-color: aqua;
-    
+body{
+    background-color:lightsteelblue;
+    color: black;
+}
 
-  }
-h1 {
+h1{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.index1{
+    text-align: left;
+}
+.index2{
     text-align: center;
 }

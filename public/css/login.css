@@ -1,8 +1,15 @@
 body {
     color:green;
-    background-color: aqua;
+    background-color:lightblue;
 
   }
 h1 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+nav {
     text-align: center;
 }

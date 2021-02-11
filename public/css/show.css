@@ -11,8 +11,11 @@ background-color:lightgreen;
 
 h1{
     text-align: center;
+    padding-bottom: 2rem;
 }
-
+.show1{
+    text-align: center;
+}
 
 
 #pic {
