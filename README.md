@@ -9,7 +9,8 @@
 - Deployment:
 
 ## Wireframes
-- 
+- ../img/img_0597.img
+- ../img/img_0598.img
 
 ## Requirements
 ## Technical Requirements
