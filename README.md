@@ -9,8 +9,8 @@
 - Deployment: https://bookreaderssharmila.herokuapp.com/books
 
 ## Wireframes
-- https://github.com/sp53852/Unit2-BookRack-app/blob/master/img/IMG_0597.jpg
-- https://github.com/sp53852/Unit2-BookRack-app/blob/master/img/IMG_0598.jpg
+- ![informed optimism?](img/IMG_0597.jpg)
+- ![informed optimism?](img/IMG_0598.jpg)
 
 ## Requirements
 ## Technical Requirements
@@ -19,6 +19,7 @@ MVP - Full stack application - Book Rack App
 ### Technologies Used
 - Node.js, Express, EJS 
 - JavaScript, HTML and CSS
+- REST, CRUD
 - Postgres
 - Sequelize Associations
 
@@ -34,7 +35,6 @@ MVP - Full stack application - Book Rack App
 - Models: book.js and reader.js
 - Views: book views( index.ejs, show.ejs,new.ejs and edit.ejs), readers(index.ejs, Signup.ejs,login.ejs  and profile.ejs)
 - Controllers: booksController, readersController
-
 
 ### User Stories
 1. As a user, I want to set up server with Node.js and Express JS, so that server is up and running for bookrack app.
@@ -76,3 +76,14 @@ MVP - Full stack application - Book Rack App
 
 12. As a user, I want to add associations to both book and reader table, so that I can update both controllers with other model.
 - Acceptance Criteria:sequelize Association (hasMany/belongsTo) between Book and Reader should work as expected. All routes and API's should work as expected. 
+
+### Code Snippet
+- router.post("/", (req, res) => {
+    Book.create(req.body).then((newBook) => {
+      res.redirect("/books");
+    });
+  });
+
+### Future Improvements
+1. Would like to add manay to many association between Book and Author.
+2. Would like to add encrypted passwords & an authorization flow for sign up/log in functionality.

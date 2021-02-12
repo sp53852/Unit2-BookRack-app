@@ -83,8 +83,8 @@ router.get("/:id", (req, res) => {
 // 	res.render(
 // 		'edit.ejs', //render views/edit.ejs
 // 		{ //pass in an object that contains
-// 			book: books[req.params.index], //the fruit object
-// 			index: req.params.index //... and its index in the array
+// 			book: books[req.params.index], 
+// 			index: req.params.index 
 // 		}
 // 	);
 // });
@@ -97,9 +97,9 @@ router.get("/:id/edit", function (req, res) {
   });
 
 //UPDATE PUT
-// router.put('/:index', (req, res) => { //:index is the index of our fruits array that we want to change
-// 	books[req.params.index] = req.body; //in our fruits array, find the index that is specified in the url (:index).  Set that element to the value of req.body (the input data)
-// 	res.redirect('/books'); //redirect to the index page
+// router.put('/:index', (req, res) => { 
+// 	books[req.params.index] = req.body; 
+// 	res.redirect('/books'); 
 // });
 router.put("/:id", (req, res) => {
     Book.update(req.body, {
@@ -112,8 +112,8 @@ router.put("/:id", (req, res) => {
 
 //DESTROY DELETE
 // router.delete('/:index', (req, res) => {
-// 	books.splice(req.params.index, 1); //remove the item from the array
-// 	res.redirect('/books');  //redirect back to index route
+// 	books.splice(req.params.index, 1);
+// 	res.redirect('/books');  
 // });
 router.delete("/:id", (req, res) => {
     Book.destroy({ where: { id: req.params.id } }).then(() => {
